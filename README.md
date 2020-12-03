@@ -4,15 +4,15 @@
 
 Stack is a simple card-style Hugo theme designed for Bloggers, some of its features are:
 
-* **Responsive images support**
-* **Lazy load images**
-* **Dark mode**
-* [\*\*PhotoSwipe](https://photoswipe.com/) integration\*\*
-* **Archive page template**
-* **Full native JavaScript, no jQuery or any other frameworks are used**
-* **No CSS framework**, keep it simple and minimal
-* **External dependencies** \(_like PhotoSwipe's library_\) are being **loaded selectively,** or **asynchronously**
-* **Properly cropped thumbnails**
+* Responsive images support
+* Lazy load images
+* Dark mode
+* [PhotoSwipe](https://photoswipe.com/) integration
+* Archive page template
+* Full native JavaScript, no jQuery or any other frameworks are used
+* No CSS framework, keep it simple and minimal
+* External dependencies \(_like PhotoSwipe's library_\) are being loaded selectively, or asynchronously
+* Properly cropped thumbnails
 
 The only JavaScript library being used is [node-vibrant](https://github.com/Vibrant-Colors/node-vibrant) for generating colour schemes for articles.
 
