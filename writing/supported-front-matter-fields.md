@@ -7,4 +7,5 @@
 | comments | Show / hide comment section | true |
 | license | Article license | `params.article.license.default` |
 | hidden | Hide page in homepage and archive page. But can be viewed by accessing it's URL. | false |
+| math | Enable KaTeX rendering |  |
 
