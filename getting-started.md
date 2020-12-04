@@ -4,11 +4,14 @@
 
 **最低 Hugo 版本要求为 0.74.0。**
 
-修改 SCSS 文件需要使用 Hugo Extended 版本。
+以下情况需要用到 Hugo Extended 版本：
 
-如果你是第一次使用 Hugo，可以参考官方的安装手册：
+* 修改 SCSS 文件
+* 或使用 GitHub 仓库的最新版本
 
-[Install Hugo](https://gohugo.io/getting-started/installing/)
+第一次使用 Hugo 可以参考官方的安装手册：
+
+{% embed url="https://gohugo.io/getting-started/installing/" %}
 
 如果你在使用 Windows，我推荐使用 [Scoop](https://scoop.sh/) 来安装 Hugo：
 
@@ -20,7 +23,7 @@ scoop install hugo-extended
 
 可以直接使用 GitHub 页面的 _Code_ 按钮来下载最新版本的主题：
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09f0edcd-beca-444e-866b-32d543f44eb0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09f0edcd-beca-444e-866b-32d543f44eb0/Untitled.png)
+![](.gitbook/assets/image%20%285%29.png)
 
 下载后把 `hugo-theme-stack-master` 改名为 `hugo-theme-stack` 并放到站点目录的 `theme` 文件夹下。
 

@@ -1,28 +1,30 @@
-# CSS Variables
+# CSS 变量
 
-[CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) used by this theme are stored inside `assets/scss/variables.scss`.
+\`\`
 
-They are divided into following categories:
+主题使用到的 CSS 变量可以在 `assets/scss/variables.scss` 这个文件下看到。
 
-### Site-wide styles
+这些变量分成以下几类：
 
-* `--main-top-padding`: Top padding of page
-* `--body-background`: Body background color
+### 全局样式
+
+* `--main-top-padding`： 顶部 Padding
+* `--body-background`： 页面背景颜色
 * `--body-text-color`
 * `--accent-color`
 * `--accent-color-darker`
 * `--accent-color-text`
-* `--tag-border-radius`: Border radius size of tag
-* `--section-separation`: Separation between cards
+* `--tag-border-radius`： 标签圆角大小
+* `--section-separation`： 卡片距离
 
-### Global font family
+### 全局字体样式
 
 * `--sys-font-family`
 * `--zh-font-family`
 * `--base-font-family`
 * `--code-font-family`
 
-### Card style
+### 卡片样式
 
 * `--card-background`
 * `--card-background-selected`
@@ -31,40 +33,40 @@ They are divided into following categories:
 * `--card-text-color-tertiary`
 * `--card-separator-color`
 * `--card-border-radius`
-* `--content-padding`: Regular card padding
-* `--small-card-padding`: Small card Padding
+* `--content-padding`： 卡片 Padding
+* `--small-card-padding`： 小卡片 Padding
 
-### Article content font style
+### 文章字体样式
 
 * `--article-font-family`
 * `--article-font-size`
 * `--article-line-height`
 
-### Article content element style
+### 文章内容样式
 
-#### Blockquote style
+#### Blockquote 样式
 
 * `--blockquote-border-size`
 * `--blockquote-background-color`
 
-#### Heading style
+#### 标题样式
 
 * `--heading-border-size`
 
-#### Link style
+#### 链接样式
 
 * `--link-background-color`
 * `--link-background-opacity`
 * `--link-background-opacity-hover`
 
-#### Code block style
+#### 代码块样式
 
 * `--pre-background-color`
 * `--pre-text-color`
 * `--code-background-color`
 * `--code-text-color`
 
-#### Table style
+#### 表格样式
 
 * `--table-border-color`
 * `--tr-even-background-color`

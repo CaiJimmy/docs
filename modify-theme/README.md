@@ -1,28 +1,25 @@
-# Modify theme
-
-It's recommended to modify this theme's source file **by overwriting them using Hugo's theme components functionality**, so the change you made remains after upgrading.
+# 修改主题
 
 {% embed url="https://gohugo.io/hugo-modules/theme-components/" %}
 
-### Add custom code to `<head>` / end of page
+主题预留了 `layouts/partials/head/custom.html` 和 `layouts/partials/footer/custom.html` 这两个文件来自定义页面头部和底部的内容。
 
-There are two empty files reserved for custom code:
+借助 Hugo 的特性可以很方便地覆盖主题的源码（类似 WordPress 的子主题功能）。
 
-* `layouts/partials/head/custom.html`
-* `layouts/partials/footer/custom.html`
+举个例子，假设我要在页面底部添加 Google Analytics 统计代码，可以这么做：
 
-To overwrite them:
+1. 在**站点根目录**新建 `layouts/partials/footer/custom.html` 文件
+2. 在该文件内插入统计代码
 
-1. Create `layout/partials/footer/custom.html` under your Hugo site folder
-2. Insert custom code in that file.
+这么做的好处就是**可以直接覆盖升级主题**，同时不丢失你对主题做的修改。
 
-### Edit theme style
+也可以用同样的方式**修改主题的 SCSS 文件**（存放在 `assets/scss` 文件夹下）。同理，需要在站点根目录下创建同名文件，Hugo 就会赋予它更高的优先级。
 
-You can modify this theme's stylesheet using the same method. Stylesheets file \(SCSS\) are places under `assets/scss` folder.
-
-Before you do that, **check CSS variables** used by this theme. It's easier changing value of those variables, and less intrusive.
+但在此之前，请查看主题提供的 CSS 变量，避免直接修改样式文件：
 
 {% page-ref page="css-variables.md" %}
+
+{% page-ref page="example-custom-font-family-for-article-content.md" %}
 
 
 

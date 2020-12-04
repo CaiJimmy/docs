@@ -1,30 +1,40 @@
-# Welcome
+# 介绍
 
 ![](.gitbook/assets/image%20%283%29.png)
 
-Stack is a simple card-style Hugo theme designed for Bloggers, some of its features are:
+### 功能
 
-* **Responsive images support**
-* **Lazy load images**
-* **Dark mode**
-* [\*\*PhotoSwipe](https://photoswipe.com/) integration\*\*
-* **Archive page template**
-* **Full native JavaScript, no jQuery or any other frameworks are used**
-* **No CSS framework**, keep it simple and minimal
-* **External dependencies** \(_like PhotoSwipe's library_\) are being **loaded selectively,** or **asynchronously**
-* **Properly cropped thumbnails**
+* 文章图片自带长宽比信息
+* 图片懒加载 \(`loading="lazy"`\)
+* 可以给分类 / 标签添加图片和介绍
+* 归档页面
+* 暗色模式 \(跟随系统设置\)
+* 无 jQuery，纯原生 JavaScript
+* 无 CSS 框架
 
-The only JavaScript library being used is [node-vibrant](https://github.com/Vibrant-Colors/node-vibrant) for generating colour schemes for articles.
+**主题唯一的外部依赖是** [**Vibrant-Colors / node-vibrant**](https://github.com/Vibrant-Colors/node-vibrant) **这个库，没有使用到前端框架。**
 
-### Copyright
+文章缩略图使用了 Hugo 的 Image Processing 功能，自动裁剪成合适的大小来优化页面加载速度。缺点是第一次生成站点时耗时会比较长，第二次有缓存后就会恢复到正常速度（我博客生成速度 ~ 500ms ）。
 
-**Licensed under the GNU General Public License v3.0**
+页面头部加入了 Open Graph 标签，在 Telegram 或 Twitter 这些平台上贴链接时可以获得不错的效果。
 
-Please do not remove the "_Theme Stack designed by Jimmy_" text and link.
+### 版权
 
-If you want to port this theme to another blogging platform, please let me know🙏.
+Licensed under the GNU General Public License v3.0
 
-### Thanks to
+**请不要删除页脚的版权链接。**
+
+如果要把主题移植到其他平台请提前通知我一声🙏。
+
+### 捐赠
+
+如果喜欢这个主题，欢迎通过以下链接来赞助其开发：
+
+ [![Buy Me A Coffee](https://camo.githubusercontent.com/c58c9d4d7884c99daada0f44b7cf6a362f8c4fc7430aa860b5065e2c2d86b3af/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d677265656e2e706e67)](https://www.buymeacoffee.com/jimmycai)
+
+多谢你的支持 ：）
+
+### 致谢
 
 * [Vibrant-Colors/node-vibrant](https://github.com/Vibrant-Colors/node-vibrant)
 * [Normalize.css](https://necolas.github.io/normalize.css/)
@@ -35,5 +45,5 @@ If you want to port this theme to another blogging platform, please let me know�
 * [artchen/hexo-theme-element](https://github.com/artchen/hexo-theme-element)
 * [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo)
 * [lepture/yue.css](https://github.com/lepture/yue.css)
-* Markdown gallery syntax from [Typlog](https://typlog.com/)
+* 相册语法来自 [Typlog](https://typlog.com/)
 
