@@ -2,7 +2,8 @@
 
 * [Welcome](README.md)
 * [Getting Started](getting-started.md)
-* [Configuration](configuration.md)
+* [Configuration](configuration/README.md)
+  * [Custom Menu](configuration/custom-menu.md)
 * [Modify theme](modify-theme/README.md)
   * [CSS Variables](modify-theme/css-variables.md)
   * [Example: Custom font family for article content](modify-theme/example-custom-font-family-for-article-content.md)
