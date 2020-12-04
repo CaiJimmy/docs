@@ -24,6 +24,14 @@ Please do not remove the "_Theme Stack designed by Jimmy_" text and link.
 
 If you want to port this theme to another blogging platform, please let me know🙏.
 
+### Sponsoring
+
+If you like this theme, consider supporting its development:
+
+[![Buy Me A Coffee](https://camo.githubusercontent.com/c58c9d4d7884c99daada0f44b7cf6a362f8c4fc7430aa860b5065e2c2d86b3af/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d677265656e2e706e67)](https://www.buymeacoffee.com/jimmycai)
+
+Your support is greatly appreciated :\)
+
 ### Thanks to
 
 * [Vibrant-Colors/node-vibrant](https://github.com/Vibrant-Colors/node-vibrant)
