@@ -1,12 +1,12 @@
 # 配置主题
 
 {% hint style="warning" %}
- 主题最新的配置文件可以在 [exampleSite/config.toml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.toml) 找到，本页面的内容可能会过期。
+ 主题最新的配置文件可以在 [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml) 找到，本页面的内容可能会过期。
 {% endhint %}
 
-Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使用 YAML，但本主题默认提供的配置文件为 TOML 格式）
+Hugo 的配置存放在站点根目录的 `config.yaml` 里。
 
-与主题相关的配置字段存放在 `[params]` 对象下：
+与主题相关的配置字段存放在 `params` 对象下：
 
 ## 站点全局设置
 
@@ -41,24 +41,17 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
       </td>
       <td style="text-align:left">RSS &#x8F93;&#x51FA;&#x6587;&#x7AE0;&#x5B8C;&#x6574;&#x5185;&#x5BB9;</td>
     </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat</code>
-      </td>
-      <td style="text-align:left">&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x8BBE;&#x7F6E;&#x3002;Go &#x7684;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x76F8;&#x6BD4;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x6709;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;dateFormat<code>dateFormat.published</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat.published</code>
-      </td>
-      <td style="text-align:left">&#x6587;&#x7AE0;&#x53D1;&#x5E03;&#x65E5;&#x671F;&#x683C;&#x5F0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat.lastUpdated</code>
-      </td>
-      <td style="text-align:left">&#x6587;&#x7AE0;&#x66F4;&#x65B0;&#x65E5;&#x671F;&#x683C;&#x5F0F;</td>
-    </tr>
   </tbody>
 </table>
+
+## dateFormat
+
+日期格式设置。Go 的时间格式相比其他语言有很大的不同，请参考官方文档：[dateFormat](https://gohugo.io/functions/dateformat/)
+
+| Name | Description |
+| :--- | :--- |
+| `dateFormat.published` | 文章发布日期格式 |
+| `dateFormat.lastUpdated` | 文章更新日期格式 |
 
 ## Sidebar
 
@@ -108,7 +101,7 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>article.license</code>
+      <td style="text-align:left"><code>license</code>
       </td>
       <td style="text-align:left">
         <p>&#x6587;&#x7AE0;&#x534F;&#x8BAE;&#x8BBE;&#x7F6E;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x9875;&#x9762;&#x5E95;&#x90E8;</p>
@@ -181,7 +174,7 @@ Comment system related settings
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>widgets.enabled</code>
+      <td style="text-align:left"><code>enabled</code>
       </td>
       <td style="text-align:left">
         <p>&#x6570;&#x7EC4;&#xFF0C;&#x5E26;&#x6709;&#x8981;&#x663E;&#x793A;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#x3002;&#x76EE;&#x524D;&#x53EF;&#x7528;&#x7684;&#x503C;&#xFF1A;</p>
@@ -193,7 +186,7 @@ Comment system related settings
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>widgets.archives</code>
+      <td style="text-align:left"><code>archives</code>
       </td>
       <td style="text-align:left">
         <p>&#x5F52;&#x6863;&#x5C0F;&#x90E8;&#x4EF6;&#x8BBE;&#x7F6E;</p>
@@ -205,7 +198,7 @@ Comment system related settings
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>widgets.tagCloud</code>
+      <td style="text-align:left"><code>tagCloud</code>
       </td>
       <td style="text-align:left">
         <p>&#x6807;&#x7B7E;&#x4E91;&#x5C0F;&#x90E8;&#x4EF6;&#x8BBE;&#x7F6E;</p>
@@ -230,7 +223,7 @@ Comment system related settings
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>opengraph.twitter</code>
+      <td style="text-align:left"><code>twitter</code>
       </td>
       <td style="text-align:left">
         <p></p>
@@ -250,7 +243,7 @@ Comment system related settings
 
 | Name | Description |
 | :--- | :--- |
-| `defaultImage.opengraph` | Open Graph 标签默认图片 |
+| `opengraph` | Open Graph 标签默认图片 |
 
 格式如下：
 
@@ -261,4 +254,13 @@ Comment system related settings
 {% hint style="info" %}
 **推荐把图片放在本地**，因为这样能被主题自动裁剪成合适的尺寸。
 {% endhint %}
+
+## ColorScheme
+
+ 亮色 / 暗色模式相关
+
+| Name | Description |
+| :--- | :--- |
+| `toggle` | 显示切换按钮 |
+| `default` | 默认配色。可选值：``auto, `light`, `dark``` |
 
