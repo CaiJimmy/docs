@@ -2,7 +2,7 @@
 
 ### Requirements
 
-This theme uses SCSS and TypeScript. For that reason, it's necessary to use **Hugo ≥ 0.74.0**.
+This theme uses SCSS and TypeScript. For that reason, it's necessary to use **Hugo ≥ 0.78.0**.
 
 Use Hugo Extended version if you want to:
 
