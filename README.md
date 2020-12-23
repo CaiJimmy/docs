@@ -7,14 +7,13 @@ Stack is a simple card-style Hugo theme designed for Bloggers, some of its featu
 * Responsive images support
 * Lazy load images
 * Dark mode
+* Local search
 * [PhotoSwipe](https://photoswipe.com/) integration
 * Archive page template
 * Full native JavaScript, no jQuery or any other frameworks are used
 * No CSS framework, keep it simple and minimal
-* External dependencies \(_like PhotoSwipe's library_\) are being loaded selectively, or asynchronously
 * Properly cropped thumbnails
-
-The only JavaScript library being used is [node-vibrant](https://github.com/Vibrant-Colors/node-vibrant) for generating colour schemes for articles.
+* Subsection support
 
 ### Copyright
 
@@ -26,9 +25,9 @@ If you want to port this theme to another blogging platform, please let me knowð
 
 ### Sponsoring
 
-If you like this theme, consider supporting its development:
+If you like this theme, give it a star, and consider supporting its development:
 
-[![Buy Me A Coffee](https://camo.githubusercontent.com/c58c9d4d7884c99daada0f44b7cf6a362f8c4fc7430aa860b5065e2c2d86b3af/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d677265656e2e706e67)](https://www.buymeacoffee.com/jimmycai)
+[![ko-fi](https://camo.githubusercontent.com/88b9e664b2a500cbdc892ab041e3fd1d7c348082650f3e5cf38da8ce3865e922/68747470733a2f2f7777772e6b6f2d66692e636f6d2f696d672f676974687562627574746f6e5f736d2e737667)](https://ko-fi.com/C0C530AXX)
 
 Your support is greatly appreciated :\)
 
