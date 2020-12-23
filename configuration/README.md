@@ -1,11 +1,11 @@
 # Configuration
 
 {% hint style="warning" %}
-Theme's newest configuration file can be found in [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml).   
+Theme's newest configuration file can be found in [exampleSite/config.toml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.toml).   
 Take that file as reference, this page's content might be outdated.
 {% endhint %}
 
-Theme's example configuration is placed under `params` section of `exampleSite/config.yaml`.
+Theme's example configuration is placed under `params` section of `exampleSite/config.toml`.
 
 ## Site-wide settings
 
@@ -41,17 +41,27 @@ Theme's example configuration is placed under `params` section of `exampleSite/c
       </td>
       <td style="text-align:left">Output page&apos;s full content in RSS.</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>dateFormat</code>
+      </td>
+      <td style="text-align:left">Date format setting. Notice that Go&apos;s date format is slightly different
+        than other programming language, take a look at official documentation:
+        <a
+        href="https://gohugo.io/functions/dateformat/">dateFormat</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>dateFormat.published</code>
+      </td>
+      <td style="text-align:left">Page publish date format</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>dateFormat.lastUpdated</code>
+      </td>
+      <td style="text-align:left">Page last updated date format</td>
+    </tr>
   </tbody>
 </table>
-
-## Date Format
-
-Date format setting. Notice that Go's date format is slightly different than other programming language, take a look at official documentation: [dateFormat](https://gohugo.io/functions/dateformat/)
-
-| Name | Description |
-| :--- | :--- |
-| `published` | Page publish date format |
-| `lastUpdated` | Page last updated date format |
 
 ## Sidebar
 
@@ -70,7 +80,11 @@ Settings related with left-side sidebar.
       </td>
       <td style="text-align:left">
         <p>Site owner avatar.</p>
-        <p>If <code>local</code> is set to true, theme will look for <code>src</code> under <code>assets</code> folder</p>
+        <p><b>Place image under Hugo site&apos;s <code>assets/img</code> folder.</b>
+        </p>
+        <p>For example, if the avatar is placed under <code>assets/img/avatar.png</code>,
+          then introduce <code>img/avatar.png</code>
+        </p>
       </td>
     </tr>
     <tr>
@@ -99,7 +113,7 @@ Setting related with article page.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>license</code>
+      <td style="text-align:left"><code>article.license</code>
       </td>
       <td style="text-align:left">
         <p>Article license settings. It shows at the end of article:</p>
@@ -113,11 +127,6 @@ Setting related with article page.
             Front Matter.</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>math</code>
-      </td>
-      <td style="text-align:left">Enable KaTeX on all pages</td>
     </tr>
   </tbody>
 </table>
@@ -135,13 +144,11 @@ Comment system related settings
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>enabled</code>
-      </td>
+      <td style="text-align:left">enabled</td>
       <td style="text-align:left">Show comment system by default in every article page.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>provider</code>
-      </td>
+      <td style="text-align:left">provider</td>
       <td style="text-align:left">
         <p>Comment system provider. Available options:</p>
         <ul>
@@ -177,7 +184,7 @@ Settings related with right-sidebar widgets.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>enabled</code>
+      <td style="text-align:left"><code>widgets.enabled</code>
       </td>
       <td style="text-align:left">
         <p>An array including enabled widget&apos;s name. Available values:</p>
@@ -188,7 +195,7 @@ Settings related with right-sidebar widgets.
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>archives</code>
+      <td style="text-align:left"><code>widgets.archives</code>
       </td>
       <td style="text-align:left">
         <ul>
@@ -199,7 +206,7 @@ Settings related with right-sidebar widgets.
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>tagCloud</code>
+      <td style="text-align:left"><code>widgets.tagCloud</code>
       </td>
       <td style="text-align:left">
         <ul>
@@ -223,7 +230,7 @@ Settings related with right-sidebar widgets.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>twitter</code>
+      <td style="text-align:left"><code>opengraph.twitter</code>
       </td>
       <td style="text-align:left">
         <p></p>
@@ -244,7 +251,7 @@ Default featured image settings \(in case page doesn't have `image` field set in
 
 | Name | Description |
 | :--- | :--- |
-| `opengraph` | Default image for Open Graph tag |
+| `defaultImage.opengraph` | Default image for Open Graph tag |
 
 All of those sections has following structure:
 
@@ -255,13 +262,4 @@ All of those sections has following structure:
 {% hint style="info" %}
 **It's recommended to place images locally**. Otherwise, this theme won't be able to crop and optimize it automatically.
 {% endhint %}
-
-## Color Scheme
-
-Related with light / dark theme.
-
-| Name | Description |
-| :--- | :--- |
-| `toggle` | Display toggle |
-| `default` | Default color scheme. Available values: `auto`, `light`, `dark` |
 
