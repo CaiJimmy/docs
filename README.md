@@ -8,11 +8,9 @@
 * 图片懒加载 \(`loading="lazy"`\)
 * 可以给分类 / 标签添加图片和介绍
 * 归档页面
-* 暗色模式 \(跟随系统设置\)
+* 暗色模式
 * 无 jQuery，纯原生 JavaScript
 * 无 CSS 框架
-
-**主题唯一的外部依赖是** [**Vibrant-Colors / node-vibrant**](https://github.com/Vibrant-Colors/node-vibrant) **这个库，没有使用到前端框架。**
 
 文章缩略图使用了 Hugo 的 Image Processing 功能，自动裁剪成合适的大小来优化页面加载速度。缺点是第一次生成站点时耗时会比较长，第二次有缓存后就会恢复到正常速度（我博客生成速度 ~ 500ms ）。
 
@@ -30,7 +28,7 @@ Licensed under the GNU General Public License v3.0
 
 如果喜欢这个主题，欢迎通过以下链接来赞助其开发：
 
- [![Buy Me A Coffee](https://camo.githubusercontent.com/c58c9d4d7884c99daada0f44b7cf6a362f8c4fc7430aa860b5065e2c2d86b3af/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d677265656e2e706e67)](https://www.buymeacoffee.com/jimmycai)
+ [![ko-fi](https://camo.githubusercontent.com/88b9e664b2a500cbdc892ab041e3fd1d7c348082650f3e5cf38da8ce3865e922/68747470733a2f2f7777772e6b6f2d66692e636f6d2f696d672f676974687562627574746f6e5f736d2e737667)](https://ko-fi.com/C0C530AXX)
 
 多谢你的支持 ：）
 
