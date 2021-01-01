@@ -32,36 +32,11 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 与左侧边栏相关的设置。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>avatar</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x535A;&#x4E3B;&#x5934;&#x50CF;&#x3002;</p>
-        <p><b>&#x8BF7;&#x628A;&#x56FE;&#x7247;&#x5B58;&#x653E;&#x5728;&#x7AD9;&#x70B9;&#x6839;&#x76EE;&#x5F55;&#x7684; <code>assets/img</code> &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;</b>
-        </p>
-        <p>&#x4F8B;&#x5982; <code>assets/img/avatar.png</code>&#xFF0C; &#x5E76;&#x586B;&#x5165; <code>img/avatar.png</code>&#x3002;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>emoji</code>
-      </td>
-      <td style="text-align:left">&#x5934;&#x50CF;&#x5E95;&#x90E8;&#x7684; Emoji&#x3002;&#x7559;&#x7A7A;&#x4E0D;&#x663E;&#x793A;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>subtitle</code>
-      </td>
-      <td style="text-align:left">&#x7AD9;&#x70B9;&#x4ECB;&#x7ECD;</td>
-    </tr>
-  </tbody>
-</table>
+| Name | Description |
+| :--- | :---------- |
+| `avatar` | 博主头像。<p>**请把图片存放在站点根目录的 assets/img 文件夹下。**</p><p>例如 assets/img/avatar.png， 并填入 img/avatar.png。</p> |
+| `emoji` | 头像底部的 Emoji。留空不显示。 |
+| `subtitle` | 站点介绍
 
 ## Article
 
