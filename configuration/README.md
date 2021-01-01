@@ -8,92 +8,35 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 与主题相关的配置字段存放在 `[params]` 对象下：
 
-## 站点全局设置
+## params
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>mainSections</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x5728;&#x9996;&#x9875;&#x548C;&#x5F52;&#x6863;&#x9875;&#x9762;&#x8F93;&#x51FA;&#x6765;&#x81EA;&#x6307;&#x5B9A;
-          section &#x7684;&#x6587;&#x7AE0;&#x3002;&#x9ED8;&#x8BA4;&#x4F1A;&#x8F93;&#x51FA;&#x653E;&#x5728;
-          content/post &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x9875;&#x9762;&#x3002;</p>
-        <p></p>
-        <p>Ref: <a href="https://gohugo.io/content-management/sections/">Content Sections</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>featuredImageField</code>
-      </td>
-      <td style="text-align:left">&#x7279;&#x8272;&#x56FE;&#x7247;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;
-        image&#x3002;&#x4E0D;&#x5EFA;&#x8BAE;&#x4FEE;&#x6539;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>rssFullContent</code>
-      </td>
-      <td style="text-align:left">RSS &#x8F93;&#x51FA;&#x6587;&#x7AE0;&#x5B8C;&#x6574;&#x5185;&#x5BB9;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat</code>
-      </td>
-      <td style="text-align:left">&#x65E5;&#x671F;&#x683C;&#x5F0F;&#x8BBE;&#x7F6E;&#x3002;Go &#x7684;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x76F8;&#x6BD4;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x6709;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;dateFormat<code>dateFormat.published</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat.published</code>
-      </td>
-      <td style="text-align:left">&#x6587;&#x7AE0;&#x53D1;&#x5E03;&#x65E5;&#x671F;&#x683C;&#x5F0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>dateFormat.lastUpdated</code>
-      </td>
-      <td style="text-align:left">&#x6587;&#x7AE0;&#x66F4;&#x65B0;&#x65E5;&#x671F;&#x683C;&#x5F0F;</td>
-    </tr>
-  </tbody>
-</table>
+站点全局设置
+
+| Name | Description |
+| :--- | :---------- |
+| `mainSections` | 在首页和归档页面输出来自指定 section 的文章。默认会输出放在 content/post 文件夹下的页面。  Ref: [Content Sections](https://gohugo.io/content-management/sections/)|
+| `featuredImageField` | 特色图片使用的字段，默认为 image。不建议修改。 |
+| `rssFullContent` | RSS 输出文章完整内容 |
+| `favicon` | 站点的图标 |
+
+## dateFormat
+
+日期格式设置。Go 的时间格式相比其他语言有很大的不同，请参考官方文档：[dateFormat](https://gohugo.io/functions/dateformat/)
+
+| Name | Description |
+| :--- | :---------- |
+| `dateFormat.published` | 文章发布日期格式 |
+| `dateFormat.lastUpdated` | 文章更新日期格式 |
 
 ## Sidebar
 
 与左侧边栏相关的设置。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>avatar</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x535A;&#x4E3B;&#x5934;&#x50CF;&#x3002;</p>
-        <p><b>&#x8BF7;&#x628A;&#x56FE;&#x7247;&#x5B58;&#x653E;&#x5728;&#x7AD9;&#x70B9;&#x6839;&#x76EE;&#x5F55;&#x7684; <code>assets/img</code> &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;</b>
-        </p>
-        <p>&#x4F8B;&#x5982; <code>assets/img/avatar.png</code>&#xFF0C; &#x5E76;&#x586B;&#x5165; <code>img/avatar.png</code>&#x3002;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>emoji</code>
-      </td>
-      <td style="text-align:left">&#x5934;&#x50CF;&#x5E95;&#x90E8;&#x7684; Emoji&#x3002;&#x7559;&#x7A7A;&#x4E0D;&#x663E;&#x793A;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>subtitle</code>
-      </td>
-      <td style="text-align:left">&#x7AD9;&#x70B9;&#x4ECB;&#x7ECD;</td>
-    </tr>
-  </tbody>
-</table>
+| Name | Description |
+| :--- | :---------- |
+| `avatar` | 博主头像。<br>**请把图片存放在站点根目录的 assets/img 文件夹下**。<br>例如 `assets/img/avatar.png`， 并填入 `img/avatar.png`。 |
+| `emoji` | 头像底部的 Emoji。留空不显示。 |
+| `subtitle` | 站点介绍
 
 ## Article
 
