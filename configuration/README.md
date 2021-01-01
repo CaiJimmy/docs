@@ -14,7 +14,7 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 | Name | Description |
 | :--- | :---------- |
-| `mainSections` | 在首页和归档页面输出来自指定 section 的文章。默认会输出放在 content/post 文件夹下的页面。 <p></p><p>Ref: <a href="https://gohugo.io/content-management/sections/">Content Sections</a> |
+| `mainSections` | 在首页和归档页面输出来自指定 section 的文章。默认会输出放在 content/post 文件夹下的页面。  Ref: [Content Sections](https://gohugo.io/content-management/sections/)|
 | `featuredImageField` | 特色图片使用的字段，默认为 image。不建议修改。 |
 | `rssFullContent` | RSS 输出文章完整内容 |
 | `favicon` | 站点的图标 |
@@ -25,7 +25,7 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 | Name | Description |
 | :--- | :---------- |
-| `dateFormat.published` | 章发布日期格式 |
+| `dateFormat.published` | 文章发布日期格式 |
 | `dateFormat.lastUpdated` | 文章更新日期格式 |
 
 ## Sidebar
@@ -34,7 +34,7 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 | Name | Description |
 | :--- | :---------- |
-| `avatar` | 博主头像。<p>**请把图片存放在站点根目录的 assets/img 文件夹下。**</p><p>例如 assets/img/avatar.png， 并填入 img/avatar.png。</p> |
+| `avatar` | 博主头像。  **请把图片存放在站点根目录的 assets/img 文件夹下**。   例如 `assets/img/avatar.png`， 并填入 `img/avatar.png`。 |
 | `emoji` | 头像底部的 Emoji。留空不显示。 |
 | `subtitle` | 站点介绍
 
