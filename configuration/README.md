@@ -34,7 +34,7 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 | Name | Description |
 | :--- | :---------- |
-| `avatar` | 博主头像。  **请把图片存放在站点根目录的 assets/img 文件夹下**。   例如 `assets/img/avatar.png`， 并填入 `img/avatar.png`。 |
+| `avatar` | 博主头像。<br>**请把图片存放在站点根目录的 assets/img 文件夹下**。<br>例如 `assets/img/avatar.png`， 并填入 `img/avatar.png`。 |
 | `emoji` | 头像底部的 Emoji。留空不显示。 |
 | `subtitle` | 站点介绍
 
