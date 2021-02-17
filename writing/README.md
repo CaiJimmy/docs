@@ -77,5 +77,5 @@ The synaxis used to insert gallery comes from [Typelog](https://blog.typlog.com/
 ![Image 3](https://image/src3) ![Image 4](https://image/src4)
 ```
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%282%29%20%281%29.png)
 
