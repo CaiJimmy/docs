@@ -33,7 +33,11 @@ If you are using Git to manage your Hugo site, add this theme as a submodule.
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
-If it's your first time using this theme, take a look at `exampleSite` folder, which includes a example `config.yaml` with all available parameters.
+If it's your first time using this theme, take a look at `exampleSite` folder, which includes an example `config.yaml` with all available parameters.
+
+{% hint style="warning" %}
+Remove `config.toml` from your site folder.
+{% endhint %}
 
 In case this is your first time using Hugo, I recommend you copy the content of `exampleSite` to your Hugo site folder. \(_It includes a set of example posts._\)
 
