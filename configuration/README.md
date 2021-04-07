@@ -178,7 +178,7 @@ Comment system related settings
       <td style="text-align:left">
         <p></p>
         <ul>
-          <li><code>site</code>: &#x535A;&#x4E3B; Twitter &#x7528;&#x6237;&#x540D;</li>
+          <li><code>site</code>: &#x535A;&#x4E3B; Twitter &#x7528;&#x6237;&#x540D; (不加`@`)</li>
           <li><code>card</code>: <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards">Twitter Card &#x6837;&#x5F0F;</a>&#xFF0C;&#x53EF;&#x9009;&#xFF1A;summary
             / summary_large_image</li>
         </ul>
