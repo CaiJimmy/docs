@@ -42,70 +42,30 @@ Hugo 的配置存放在站点根目录的 `config.toml` 里（其实也可以使
 
 文章页面相关的设置
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>article.license</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x6587;&#x7AE0;&#x534F;&#x8BAE;&#x8BBE;&#x7F6E;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x9875;&#x9762;&#x5E95;&#x90E8;</p>
-        <p></p>
-        <ul>
-          <li><code>enabled</code>&#xFF1A; &#x662F;&#x5426;&#x5728;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x5E95;&#x90E8;&#x663E;&#x793A;&#x534F;&#x8BAE;&#x4FE1;&#x606F;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x6587;&#x7AE0;&#x7684;
-            Front Matter &#x63D2;&#x5165; <code>license: false</code> &#x6765;&#x5355;&#x72EC;&#x5173;&#x95ED;</li>
-          <li><code>default</code>&#xFF1A; &#x9ED8;&#x8BA4;&#x6587;&#x7AE0;&#x534F;&#x8BAE;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x6587;&#x7AE0;&#x7684;
-            Frontmatter &#x63D2;&#x5165; <code>license: &quot;My custom licence&quot;</code> &#x6765;&#x81EA;&#x5B9A;&#x4E49;</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+### `license`
+文章协议设置，显示在页面底部
+
+- `enabled`: 是否在所有文章底部显示协议信息。可以在文章的 `Front Matter` 插入 `license: false` 来单独关闭
+- `default`: 默认文章协议。可以在文章的 `Front Matter` 插入 `license: "My custom licence"` 来单独关闭
+
+### `math`
+
+启用 `KaTeX` 在所有文章
 
 ## Comments
 
-Comment system related settings
+留言系统设置
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>enabled</code>
-      </td>
-      <td style="text-align:left">&#x662F;&#x5426;&#x5728;&#x6587;&#x7AE0;&#x5E95;&#x90E8;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>provider</code>
-      </td>
-      <td style="text-align:left">
-        <p>&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x5546;&#x3002;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x6709;&#xFF1A;</p>
-        <ul>
-          <li><code>disqus</code>
-            <ul>
-              <li>&#x9700;&#x8981;&#x5728; config.toml &#x6DFB;&#x52A0; disqusShortname
-                &#x5B57;&#x6BB5;&#x3002;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;
-                <a
-                href="https://gohugo.io/content-management/comments/#configure-disqus">Configure Disqus</a>
-              </li>
-            </ul>
-          </li>
-          <li><code>utterances</code>
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+### `enable`
+
+是否在文章底部默认显示评论系统
+### `provider`
+评论系统提供商。目前支持的有：
+
+- `disqus`
+  - 需要在 config.toml 添加 disqusShortname 字段。参考官方文档： [Configure Disqus](https://gohugo.io/content-management/comments/#configure-disqus)
+- `utterances`
+- `remark42`
 
 {% hint style="info" %}
 可以在 `layouts/partials/comments/provider/` 下新建 `{provider}.html` 来添加更多评论系统的支持。
