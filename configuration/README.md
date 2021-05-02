@@ -1,7 +1,7 @@
 # 配置主题
 
 {% hint style="warning" %}
- 主题最新的配置文件可以在 [exampleSite/config.toml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml) 找到，本页面的内容可能会过期。
+ 主题最新的配置文件可以在 [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml) 找到，本页面的内容可能会过期。
 {% endhint %}
 
 Hugo 的配置存放在站点根目录的 `config.yaml` 里（其实也可以使用 TOML，但本主题默认提供的配置文件为 YAML 格式）
