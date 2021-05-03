@@ -9,7 +9,6 @@ Hugo 的配置存放在站点根目录的 `config.yaml` 里（其实也可以使
 与主题相关的配置字段存放在 `params` 对象下：
 
 ## params
-
 站点全局设置
 
 ### `mainSections`
@@ -32,7 +31,6 @@ RSS 输出文章完整内容
  -->
 
 ## dateFormat
-
 日期格式设置。Go 的时间格式相比其他语言有很大的不同，请参考官方文档：[dateFormat](https://gohugo.io/functions/dateformat/)
 
 ### `published`
@@ -40,8 +38,8 @@ RSS 输出文章完整内容
 
 ### `lastUpdated`
 文章发布日期格式
-## Sidebar
 
+## Sidebar
 与左侧边栏相关的设置。
 
 ### `avatar`
@@ -60,26 +58,23 @@ RSS 输出文章完整内容
 站点介绍
 
 ## Article
-
 文章页面相关的设置
 
 ### `math`
+在所有文章启用 `KaTeX`
 
-启用 `KaTeX` 在所有文章
 ### `license`
 文章协议设置，显示在页面底部
 
 - `enabled`: 是否在所有文章底部显示协议信息。可以在文章的 `Front Matter` 插入 `license: false` 来单独关闭
 - `default`: 默认文章协议。可以在文章的 `Front Matter` 插入 `license: "My custom licence"` 来单独关闭
 
-
 ## Comments
-
 留言系统设置
 
-### `enable`
-
+### `enabled`
 是否在文章底部默认显示评论系统
+
 ### `provider`
 评论系统提供商。目前支持的有：
 
@@ -94,7 +89,6 @@ RSS 输出文章完整内容
 {% endhint %}
 
 ## **Widgets**
-
 主页右侧边栏小部件设置
 
 ### `enabled`
@@ -111,20 +105,18 @@ RSS 输出文章完整内容
 
 ### `tagCloud`
 标签云小部件设置
+
 - `limit`: 输出条数限制
 
 ## Opengraph
-
 [Open Graph](https://ogp.me/) 标签相关设置
 
 ### `twitter`
 
 - `site`: 博主 Twitter 用户名 (不加 `@` )
-
 - `card`: [Twitter Card 样式](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)，可选：summary / summary_large_image
 
 ## Default Image
-
 默认特色图片设置
 
 ### opengraph
